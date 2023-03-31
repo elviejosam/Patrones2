@@ -8,6 +8,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 public class ImageView extends JPanel {
+
     private static final long serialVersionUID = 1L;
     private JLabel label;
     private Random random;
@@ -25,8 +26,11 @@ public class ImageView extends JPanel {
         imageIcon.setImage(image);
         label.setIcon(imageIcon);
 
-        int x = random.nextInt(getWidth() + 50); 
-        int y = random.nextInt(getHeight() + 50);
-        label.setBounds(x, y, 50, 50); 
+        int x = random.nextInt(getWidth() + 20);
+        int y = random.nextInt(getHeight() + 20);
+        label.setBounds(x, y, x, y);
+
+        this.add(label);
+        this.revalidate();
     }
 }
