@@ -19,7 +19,7 @@ public class ImageController {
 
         this.view.setImageIcon(this.model.getImageIcon());
 
-        //this.view.add(new LoadImageListener());
+        
     }
 
     class LoadImageListener implements ActionListener {
@@ -28,11 +28,12 @@ public class ImageController {
             ImageIcon imageIcon = loadImage();
             model.setImageIcon(imageIcon);
             view.setImageIcon(imageIcon);
+           
         }
 
         private ImageIcon loadImage() {
             // Código para cargar la imagen desde un archivo o una URL
-            return new ImageIcon("path/to/image.png");
+            return new ImageIcon("C:\\Users\\golden\\Downloads\\perrito.jpg");
         }
     }
 }

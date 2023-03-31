@@ -13,6 +13,7 @@ import javax.swing.JFrame;
 
 public class Main {
     public static void main(String[] args) {
+       
         ImageModel model = new ImageModel(new ImageIcon("C:\\Users\\golden\\Downloads\\perrito.jpg"));
         ImageView view = new ImageView();
         ImageController controller = new ImageController(model, view);
@@ -22,5 +23,6 @@ public class Main {
         frame.add(view);
         frame.pack();
         frame.setVisible(true);
+       
     }
 }
